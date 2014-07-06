@@ -1,0 +1,15 @@
+.container
+	%h1 List of Games
+
+	%p Chose a game below to get started: 
+
+	.games
+		%div.game
+			= link_to new_secret_number_path do
+				= image_tag("games/secret-number.jpg") 
+				%h3 Secret Number
+		
+		%div.game
+			= link_to new_paper_rock_scissor_path do 
+				= image_tag "games/rock-paper-scissors.jpg"
+				%h3 Rock Paper Scissors

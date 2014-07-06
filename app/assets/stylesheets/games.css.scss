@@ -1,0 +1,17 @@
+body, p, #{header} {
+	font-family: "Helvetica-Neue", helvetica,sans
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+.games {
+	@include pie-clearfix();
+}
+.game {
+	float: left;
+	&:first-child {
+		margin-right: 20px;
+	}
+}
