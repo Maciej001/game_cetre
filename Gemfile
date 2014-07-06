@@ -10,10 +10,10 @@ gem 'haml'
 
 # Gems used only for assets and not required
 # in production environments by default
-group :assets do
-	gem 'sass-rails'  # use scss for stylesheets
-	gem 'compass-rails'  #otoczka :assets dodana na potrzeby compassc
-end
+
+gem 'sass-rails'  # use scss for stylesheets
+gem 'compass-rails'  #otoczka :assets dodana na potrzeby compassc
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

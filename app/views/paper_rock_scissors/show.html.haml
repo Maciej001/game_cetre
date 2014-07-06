@@ -10,12 +10,13 @@
 	
 	.games
 		.game
-			%h2 Computer guess
-			= image_tag "rock_paper_scissors/#{pictures[@computer_guess-1]}.jpeg"
-		.game
 			%h2 Your guess
-			= image_tag "rock_paper_scissors/#{pictures[@our_guess-1]}.jpeg"
+			= image_tag "rock_paper_scissors/#{pictures[@our_guess-1]}.jpeg", class: "paper-img"
+		.game
+			%h2 Computer guess
+			= image_tag "rock_paper_scissors/#{pictures[@computer_guess-1]}.jpeg", class: "paper-img"
+		
 
-	= link_to "PLAY AGAIN", new_paper_rock_scissor_path
+	= link_to "PLAY AGAIN", new_paper_rock_scissor_path, class: 'btn'
 
 

@@ -1,5 +1,12 @@
-body, p, #{header} {
-	font-family: "Helvetica-Neue", helvetica,sans
+body, p, a, #{header} {
+	font-family: "Helvetica-Neue", helvetica,sans;
+	color: #555;
+}
+
+.paper-img {
+	border: 3px dashed #ddd;
+	padding: 5px;
+	@include border-radius(50%)
 }
 
 .container {
@@ -8,10 +15,22 @@ body, p, #{header} {
 }
 .games {
 	@include pie-clearfix();
+	margin-bottom: 35px;
 }
+
 .game {
 	float: left;
 	&:first-child {
-		margin-right: 20px;
+		margin-right: 150px;
 	}
+}
+
+.btn {
+	text-decoration: none;
+	background: #D10A64;
+	color: white;
+	@include border-radius(2px);
+	padding: 10px 25px;
+	font-size: 1rem;
+	&:hover { background: darken(#d10A64, 3%);}
 }
